@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Mizan (ميزان)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #0f766e;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --card: #111827;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #2dd4bf;
+        --border: #1e293b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Arabic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 18px 64px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 20px;
+    }
+    h1 { margin-top: 0; font-size: 1.8rem; }
+    h2 { margin-top: 22px; font-size: 1.15rem; color: var(--accent); }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .meta { font-size: 0.9rem; color: var(--muted); margin-bottom: 16px; }
+    .ar { direction: rtl; text-align: right; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card" id="en">
+      <h1>Privacy Policy — Mizan (ميزان)</h1>
+      <p class="meta">
+        Package ID: <code>com.mizan.finance</code> · Last updated: November 26, 2026 ·
+        <a href="#ar">النسخة العربية</a> · <a href="./delete-account.html">Account Deletion</a>
+      </p>
+
+      <p>
+        Mizan is designed with privacy and data minimization at its core. You can use Mizan
+        completely offline in Guest Mode or optionally sign in to sync data across devices
+        and shared partner spaces.
+      </p>
+
+      <h2>1. Data Stored on Your Device (Offline-First)</h2>
+      <p>
+        All budgets, transactions, categories, goals, debts, and optional receipt images are stored
+        locally on your device in an SQLite database. In <strong>Guest Mode</strong>, Mizan does not
+        create a cloud account or transmit your personal financial data to external servers.
+      </p>
+
+      <h2>2. Optional Mizan Cloud Sync &amp; Account Data</h2>
+      <ul>
+        <li><strong>Authentication:</strong> If you choose to sign in (Email OTP or Google Sign-In), we process your email address, user ID, and optional display name via Supabase Authentication.</li>
+        <li><strong>Cloud Database &amp; Security:</strong> Synced records (personal cloud wallets, shared wallets, shared goals, and space memberships) are stored in Supabase (<code>eu-central-1</code>), encrypted in transit (TLS) and at rest, and protected by strict Row-Level Security (RLS) so only authorized space members can access their own records.</li>
+        <li><strong>Receipt Images:</strong> Receipts attached in synced spaces are stored in a private Supabase Storage bucket (<code>receipts</code>) scoped strictly to the owning space.</li>
+      </ul>
+
+      <h2>3. Opt-In Gemini AI Financial Coach</h2>
+      <p>
+        The AI Financial Coach feature is <strong>strictly opt-in</strong> and requires your explicit
+        in-app consent before any request is sent. When you request an AI review:
+      </p>
+      <ul>
+        <li>Mizan sends <strong>only anonymized numeric aggregates</strong> (cycle spend, budget limits, 50/30/20 bucket ratios, debt APRs/balances, and goal totals).</li>
+        <li>Mizan <strong>never sends</strong> person names, transaction notes, receipt images, email addresses, or raw transaction lists.</li>
+        <li>Requests are routed through our Supabase Edge Function to Google's Gemini API with <code>store: false</code> so conversation state is not persisted server-side.</li>
+      </ul>
+
+      <h2>4. Zero Ads &amp; Zero Data Selling</h2>
+      <p>
+        Mizan displays <strong>zero advertisements</strong>, uses zero third-party ad-tracking SDKs,
+        and never sells, rents, or shares your financial data with data brokers.
+      </p>
+
+      <h2>5. Your Rights: Export &amp; Permanent Deletion</h2>
+      <ul>
+        <li><strong>Export anytime:</strong> Export your complete financial history to JSON or CSV from <em>Manage</em>.</li>
+        <li><strong>Delete anytime:</strong> Delete your local device data or permanently delete your Mizan Cloud account, synced records, and uploaded receipts directly inside the app. Full instructions are available on our <a href="./delete-account.html">Account &amp; Data Deletion page</a>.</li>
+      </ul>
+
+      <h2>6. Contact</h2>
+      <p>
+        For privacy questions or support, please open an issue or contact the developer via the
+        <a href="https://github.com/FerganyJr/mizan-legal">Mizan GitHub repository</a>.
+      </p>
+    </article>
+
+    <article class="card ar" id="ar" lang="ar">
+      <h1>سياسة الخصوصية — تطبيق ميزان (Mizan)</h1>
+      <p class="meta">
+        المعرّف: <code>com.mizan.finance</code> · آخر تحديث: 26 نوفمبر 2026 ·
+        <a href="#en">English Version</a> · <a href="./delete-account.html#ar">حذف الحساب</a>
+      </p>
+
+      <p>
+        صُمّم تطبيق ميزان ليكون آمنًا ويحترم خصوصيتك من البداية. يمكنك استخدام التطبيق بالكامل
+        بدون إنترنت (وضع الضيف)، أو تسجيل الدخول اختياريًا لمزامنة بياناتك أو مشاركة المحافظ مع الشريك.
+      </p>
+
+      <h2>1. البيانات المحفوظة على جهازك</h2>
+      <p>
+        تُحفظ جميع الميزانيات والمعاملات والأهداف والديون وصور الفواتير محليًا على جهازك في قاعدة بيانات SQLite.
+        في <strong>وضع الضيف</strong>، لا يتم إرسال أي بيانات مالية إلى أي خادم خارجي.
+      </p>
+
+      <h2>2. المزامنة السحابية الاختيارية (Mizan Cloud)</h2>
+      <ul>
+        <li><strong>تسجيل الدخول:</strong> عند اختيار تسجيل الدخول (عبر البريد الإلكتروني OTP أو Google)، نستخدم بريدك الإلكتروني ومعرّف الحساب واسم العرض الاختياري عبر Supabase Auth.</li>
+        <li><strong>أمان البيانات:</strong> تُحفظ البيانات المتزامنة في Supabase (<code>eu-central-1</code>) مشفّرة أثناء النقل (TLS) وعند التخزين، مع تطبيق قواعد أمان صارمة على مستوى الصفوف (RLS) تضمن عدم وصول أي مستخدم لبيانات لا يشارك فيها.</li>
+        <li><strong>صور الفواتير:</strong> تُحفظ الفواتير المرفوعة في مساحات متزامنة داخل مخزن خاص (<code>receipts</code>) مقصور على أعضاء المساحة فقط.</li>
+      </ul>
+
+      <h2>3. المستشار المالي الذكي (اختياري بموافقتك)</h2>
+      <p>
+        ميزة المستشار المالي بالذكاء الاصطناعي <strong>اختيارية بالكامل</strong> وتتطلب موافقتك الصريحة داخل التطبيق قبل إرسال أي طلب:
+      </p>
+      <ul>
+        <li>يرسل التطبيق <strong>أرقامًا إجمالية مجهولة الهوية فقط</strong> (إجمالي الصرف، حدود الميزانية، نسب الفئات، نسب الفائدة وأرصدة الديون، وإجمالي الأهداف).</li>
+        <li><strong>لا يتم إرسال</strong> أسماء الأشخاص أو ملاحظات المعاملات أو صور الفواتير أو البريد الإلكتروني أو سجل المعاملات الخام أبدًا.</li>
+        <li>تُعالج الطلبات عبر خادمنا الوسيط إلى Gemini API مع تفعيل <code>store: false</code> لعدم الاحتفاظ بسجل المحادثة.</li>
+      </ul>
+
+      <h2>4. بدون إعلانات وبدون بيع للبيانات</h2>
+      <p>
+        تطبيق ميزان خالٍ تمامًا من الإعلانات وأدوات التتبع الإعلانية، ولا يبيع أو يشارك بياناتك المالية مع أي طرف ثالث.
+      </p>
+
+      <h2>5. حقوقك: التصدير والحذف النهائي</h2>
+      <ul>
+        <li><strong>التصدير:</strong> يمكنك تصدير بياناتك بصيغة JSON أو CSV في أي وقت من صفحة <em>الإدارة</em>.</li>
+        <li><strong>الحذف النهائي:</strong> يمكنك مسح بيانات الجهاز أو حذف حسابك السحابي وجميع بياناته وفواتيره نهائيًا من داخل التطبيق. راجع صفحة <a href="./delete-account.html#ar">حذف الحساب والبيانات</a>.</li>
+      </ul>
+
+      <h2>6. التواصل</h2>
+      <p>
+        للاستفسارات المتعلقة بالخصوصية، يمكنك التواصل عبر
+        <a href="https://github.com/FerganyJr/mizan-legal">مستودع ميزان على GitHub</a>.
+      </p>
+    </article>
+  </main>
+</body>
+</html>

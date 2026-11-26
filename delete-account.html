@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account &amp; Data Deletion — Mizan (ميزان)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #0f766e;
+      --danger: #b91c1c;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --card: #111827;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #2dd4bf;
+        --danger: #f87171;
+        --border: #1e293b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Arabic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 18px 64px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 20px;
+    }
+    h1 { margin-top: 0; font-size: 1.8rem; }
+    h2 { margin-top: 20px; font-size: 1.15rem; color: var(--accent); }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .ar { direction: rtl; text-align: right; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card" id="en">
+      <h1>Account &amp; Data Deletion — Mizan (ميزان)</h1>
+      <p>
+        Package ID: <code>com.mizan.finance</code> · <a href="#ar">النسخة العربية</a> ·
+        <a href="./privacy.html">Privacy Policy</a>
+      </p>
+
+      <h2>How to Delete Your Account &amp; Cloud Data</h2>
+      <ol>
+        <li>Open <strong>Mizan</strong> on your device and go to the <strong>Manage</strong> tab.</li>
+        <li>Tap <strong>Cloud Account &amp; Sync</strong> → <strong>Delete Account &amp; Cloud Data</strong>.</li>
+        <li>If you own Shared Spaces with other members, choose whether to transfer ownership to another member or permanently delete those spaces.</li>
+        <li>Confirm deletion. Your request is processed immediately while online.</li>
+      </ol>
+
+      <h2>What Data Is Deleted</h2>
+      <ul>
+        <li>Your authentication user account (Supabase Auth) and user profile.</li>
+        <li>All personal cloud wallet data (transactions, budgets, categories, goals, debts, and commitments).</li>
+        <li>All uploaded receipt images stored in Supabase Storage (<code>receipts</code>).</li>
+        <li>All local SQLite app data on the device (reset cleanly to initial state).</li>
+      </ul>
+
+      <h2>Need Assistance?</h2>
+      <p>
+        If you no longer have access to your device and need help removing your cloud account,
+        please open a support request at <a href="https://github.com/FerganyJr/mizan-legal/issues">github.com/FerganyJr/mizan-legal/issues</a>
+        using the subject <em>Account Deletion Request</em>.
+      </p>
+    </article>
+
+    <article class="card ar" id="ar" lang="ar">
+      <h1>حذف الحساب والبيانات — تطبيق ميزان (Mizan)</h1>
+      <p>
+        المعرّف: <code>com.mizan.finance</code> · <a href="#en">English Version</a> ·
+        <a href="./privacy.html#ar">سياسة الخصوصية</a>
+      </p>
+
+      <h2>خطوات حذف الحساب والبيانات السحابية من داخل التطبيق</h2>
+      <ol>
+        <li>افتح تطبيق <strong>ميزان</strong> وانتقل إلى تبويب <strong>الإدارة</strong>.</li>
+        <li>اضغط على <strong>الحساب السحابي والمزامنة</strong> ثم <strong>حذف الحساب والبيانات السحابية</strong>.</li>
+        <li>إذا كنت مالكًا لمساحات مشتركة مع أعضاء آخرين، يمكنك نقل الملكية لعضو آخر أو تأكيد حذف المساحات نهائيًا.</li>
+        <li>أكّد الحذف، وسيتم تنفيذ الطلب فورًا أثناء اتصالك بالإنترنت.</li>
+      </ol>
+
+      <h2>ما الذي يتم حذفه نهائيًا؟</h2>
+      <ul>
+        <li>حساب المصادقة وملفك الشخصي على الخادم.</li>
+        <li>جميع بيانات المحفظة السحابية الشخصية (المعاملات، الميزانيات، الفئات، الأهداف، الديون، والالتزامات).</li>
+        <li>جميع صور الفواتير المرفوعة في مخزن <code>receipts</code>.</li>
+        <li>جميع البيانات المحلية على الجهاز.</li>
+      </ul>
+
+      <h2>هل تحتاج مساعدة؟</h2>
+      <p>
+        إذا لم يعد بإمكانك الوصول إلى جهازك، يمكنك طلب المساعدة عبر
+        <a href="https://github.com/FerganyJr/mizan-legal/issues">github.com/FerganyJr/mizan-legal/issues</a>.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
