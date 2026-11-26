@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.com.mizan.finance"],
+        "components": [
+          {
+            "/": "/mizan-legal/join*",
+            "comment": "Mizan space invite links"
+          },
+          {
+            "/": "/mizan-legal/auth-callback*",
+            "comment": "Mizan OAuth callback"
+          }
+        ]
+      }
+    ]
+  }
+}
