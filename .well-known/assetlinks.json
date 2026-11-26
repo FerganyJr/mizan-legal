@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mizan.finance",
+      "sha256_cert_fingerprints": [
+        "C0:75:25:46:D9:5A:82:61:2B:82:4F:57:52:8B:3E:A6:F3:7F:1A:80:50:2A:F6:A6:D6:C2:D7:8B:01:DC:E8:FF"
+      ]
+    }
+  }
+]

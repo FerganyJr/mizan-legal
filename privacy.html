@@ -87,19 +87,26 @@
         <li>Requests are routed through our Supabase Edge Function to Google's Gemini API with <code>store: false</code> so conversation state is not persisted server-side.</li>
       </ul>
 
-      <h2>4. Zero Ads &amp; Zero Data Selling</h2>
+      <h2>4. Optional Crash Diagnostics (Firebase Crashlytics)</h2>
+      <p>
+        Crash reporting via Firebase Crashlytics is <strong>disabled by default</strong> and only
+        enabled if you explicitly opt in. When enabled, only sanitized technical crash stack traces
+        and device metadata are sent—never financial amounts, transaction notes, or receipts.
+      </p>
+
+      <h2>5. Zero Ads &amp; Zero Data Selling</h2>
       <p>
         Mizan displays <strong>zero advertisements</strong>, uses zero third-party ad-tracking SDKs,
         and never sells, rents, or shares your financial data with data brokers.
       </p>
 
-      <h2>5. Your Rights: Export &amp; Permanent Deletion</h2>
+      <h2>6. Your Rights: Export &amp; Permanent Deletion</h2>
       <ul>
         <li><strong>Export anytime:</strong> Export your complete financial history to JSON or CSV from <em>Manage</em>.</li>
         <li><strong>Delete anytime:</strong> Delete your local device data or permanently delete your Mizan Cloud account, synced records, and uploaded receipts directly inside the app. Full instructions are available on our <a href="./delete-account.html">Account &amp; Data Deletion page</a>.</li>
       </ul>
 
-      <h2>6. Contact</h2>
+      <h2>7. Contact</h2>
       <p>
         For privacy questions or support, please open an issue or contact the developer via the
         <a href="https://github.com/FerganyJr/mizan-legal">Mizan GitHub repository</a>.
@@ -141,18 +148,24 @@
         <li>تُعالج الطلبات عبر خادمنا الوسيط إلى Gemini API مع تفعيل <code>store: false</code> لعدم الاحتفاظ بسجل المحادثة.</li>
       </ul>
 
-      <h2>4. بدون إعلانات وبدون بيع للبيانات</h2>
+      <h2>4. تقارير الأعطال الاختيارية (Firebase Crashlytics)</h2>
+      <p>
+        إرسال تقارير الأعطال عبر Firebase Crashlytics <strong>معطّل افتراضيًا</strong> ولا يُفعّل
+        إلا بموافقتك الصريحة. عند التفعيل، تُرسل تفاصيل تقنية منقّحة للأعطال فقط دون أي مبالغ مالية أو ملاحظات أو فواتير.
+      </p>
+
+      <h2>5. بدون إعلانات وبدون بيع للبيانات</h2>
       <p>
         تطبيق ميزان خالٍ تمامًا من الإعلانات وأدوات التتبع الإعلانية، ولا يبيع أو يشارك بياناتك المالية مع أي طرف ثالث.
       </p>
 
-      <h2>5. حقوقك: التصدير والحذف النهائي</h2>
+      <h2>6. حقوقك: التصدير والحذف النهائي</h2>
       <ul>
         <li><strong>التصدير:</strong> يمكنك تصدير بياناتك بصيغة JSON أو CSV في أي وقت من صفحة <em>الإدارة</em>.</li>
         <li><strong>الحذف النهائي:</strong> يمكنك مسح بيانات الجهاز أو حذف حسابك السحابي وجميع بياناته وفواتيره نهائيًا من داخل التطبيق. راجع صفحة <a href="./delete-account.html#ar">حذف الحساب والبيانات</a>.</li>
       </ul>
 
-      <h2>6. التواصل</h2>
+      <h2>7. التواصل</h2>
       <p>
         للاستفسارات المتعلقة بالخصوصية، يمكنك التواصل عبر
         <a href="https://github.com/FerganyJr/mizan-legal">مستودع ميزان على GitHub</a>.
